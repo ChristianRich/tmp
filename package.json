@@ -4,7 +4,9 @@
   "description": "API coding challenge",
   "main": "babel-node index.js",
   "scripts": {
-    "start": "./node_modules/babel-cli/bin/babel-node.js index.js"
+    "build": "./node_modules/.bin/babel src -d build",
+    "start": "node ./build/index.js",
+    "dev": "./node_modules/babel-cli/bin/babel-node.js src/index.js"
   },
   "engines": {
     "node": "<=10.15.0",

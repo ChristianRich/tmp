@@ -2,10 +2,7 @@
   "presets": ["es2015", "stage-3"],
   "plugins": [
     "transform-async-to-generator",
-    ["transform-runtime", {
-      "regenerator": true
-      }
-    ],
+    "transform-runtime",
     "syntax-async-functions",
     "dot-dot-slash"
   ]

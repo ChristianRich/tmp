@@ -4,7 +4,7 @@
   "description": "API coding challenge",
   "main": "babel-node index.js",
   "scripts": {
-    "build": "./node_modules/.bin/babel src -d build",
+    "build": "rm -rf ./build && ./node_modules/.bin/babel ./src -d ./build --source-maps --copy-files",
     "start": "node ./build/index.js",
     "dev": "./node_modules/babel-cli/bin/babel-node.js src/index.js"
   },

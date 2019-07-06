@@ -14,12 +14,8 @@ app.use(
   })
 )
 
-app.get('/', (req, res) => {
-  res.status(200).end('Hello 1:16' + Math.random())
-})
+app.get('/', (req, res) => res.status(200).end('Hello 1:16' + Math.random()))
 
 app.server.listen(process.env.PORT || 3000, () =>
   console.log(`Express server started on port ${app.server.address().port}`)
 )
-
-// export default app

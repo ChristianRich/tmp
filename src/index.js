@@ -23,7 +23,7 @@ app.get('/', async (req, res) => {
 })
 
 app.get('/user', (req, res) =>
-  res.json({
+  res.status(200).json({
     name: 'test',
     token: '1234-455662-22233333-3333',
   })

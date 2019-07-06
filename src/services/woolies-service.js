@@ -1,6 +1,7 @@
 import rp from 'request-promise-native'
 import { stringify } from 'qs'
 import shopperHistoryMock from '../../test/mocks/shopper-history-response'
+
 const BASE_URL =
   'http://dev-wooliesx-recruitment.azurewebsites.net/api/resource'
 

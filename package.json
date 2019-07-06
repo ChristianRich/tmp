@@ -6,7 +6,9 @@
   "scripts": {
     "build": "rm -rf ./build && ./node_modules/.bin/babel ./src -d ./build --source-maps --copy-files",
     "start": "node ./build/index.js",
-    "dev": "./node_modules/babel-cli/bin/babel-node.js src/index.js"
+    "dev": "./node_modules/babel-cli/bin/babel-node.js src/index.js",
+    "test": "npm run lint",
+    "lint": "./node_modules/.bin/eslint ./src"
   },
   "engines": {
     "node": "<=10.15.0",

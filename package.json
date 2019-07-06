@@ -11,7 +11,7 @@
     "lint": "./node_modules/.bin/eslint ./src"
   },
   "engines": {
-    "node": "10.x"
+    "node": "10.15.3"
   },
   "repository": {
     "type": "git",
